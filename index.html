@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>java script</title><br>
+
+
+      
+  <!-- How to use variables -->
+  <!-- (var) -->
+  <script>
+   document.write("<h2>VARIABLES</h2>")
+   var z = "Hello World";
+   var x = 100.22;
+   document.write(x + "<br>")
+   document.write(z + "<br>")
+ </script>
+
+ <!-- (let) -->
+
+ <script>
+   let firstName = "Joe";
+   firstName = "biden";
+   document.write(firstName + "<br>")
+ </script>
+
+ <!-- (const) -->
+
+ <script>
+   const a = "hello guys";
+   document.write(a + "<br>")
+ </script><br><br>
+
+
+ <!-- ARITHMATIC OPERATORS -->
+
+ <script>
+   document.write("<h2>ARITHMATIC OPERATORES</h2>")
+   var b = 200;
+   var c = 350.52;
+   var d = b + c;
+   document.write(d + "<br>")
+ </script>
+ <script>
+   var A = 10;
+   var B = 3;
+   var c = A**B;
+   document.write(c+"<br>")
+ </script><br><br>
+
+ <!-- COMPARISON OPERATOR  -->
+
+   <script>
+    document.write("<h2>COMPARISON OPERATORS</h2>")
+     var A = 10;
+     var B = '10';
+     document.write(A==B);
+     document.write(A===B)
+   </script><br><br>
+
+   <!-- IF STATEMENT -->
+   
+   <script>
+     document.write("<h2>IF STATEMENT</h2>")
+     var A = 100;
+     var B = 20;
+     if (A > B) {
+       document.write("A is greater");
+     }
+   </script><br><br>
+
+   <!-- LOGICAL OPERATORS  -->
+
+   <script>
+     document.write("<h2>LOGICAL OPERATORS</h2>")
+     document.write("<h3>(Logical AND)</h3>")
+     var age = 20;
+
+     if(age >= 18 && age <= 21){
+       document.write("Yes you are eligible")
+     }
+   </script>
+     <script>
+        document.write("<h3>(Logical OR)</h3>")
+          var age = 22;
+
+          if(age >= 18 || age <= 21){
+           document.write("Yes you are eligible")
+          }
+     </script>
+
+<script>
+ document.write("<h3>(Logical NOT)</h3>")
+   var A = 30;
+   var B = 15;
+
+   if(!A <= 12){
+    document.write("Yes you are eligible")
+   }
+</script><br><br>
+
+<!-- IF ELSE STATEMENT  -->
+
+<script>
+ document.write("<h2>IF ELSE STATEMENT</h2>")
+ var X = 15;
+ if (X > 30){
+   document.write("X is greater");
+ }else{
+   document.write("X is smaller")
+ }
+</script><br><br>
+
+<!-- IF ELSE IF STATEMENT -->
+<script>
+document.write("<h2>IF ELSE IF STATEMENT</h2>")
+var per = 55;
+if(per >= 80 && per <= 100){
+ document.write("You are in merit");
+}else if(per >= 60 && per < 80){
+ document.write("You are in merit");
+}else if(per >= 60 && per < 80){
+ document.write("You are in 1st Division");
+}else if(per >= 45 && per < 60){
+ document.write("You are in 2nd division");
+}else if(per >= 33 && per < 45){
+ document.write("You are in 3rd division");
+}else if(per < 33){
+ document.write("You are fail")
+}else{
+ document.write("please enter valid percent")
+}
+</script><br><br>
+
+<!-- CONDITIONAL OPERATOR  -->
+
+<script>
+ document.write("<h2>CONDITIONAL OPERATOR</h2>")
+ var X = 15;
+ var Z ;
+ (X > 10)? Z = "True" : Z = "False";
+ document.write(Z);
+</script><br>
+<script>
+ var A = 100;
+ var B;
+(A==100)? B="True": B="False";
+document.write(B);
+</script><br><br>
+
+<!-- SWITCH STATEMENT  -->
+
+<script>
+ document.write("<h2>SWITCH STATEMENT</h2>")
+ var day = 1;
+ switch(day){
+   case 0 :
+     document.write("Today is Monday");
+     break;
+     case 1 :
+     document.write("Today is Tuesday");
+     break;
+     case 2 :
+     document.write("Today is Wednesday");
+     break;
+     case 3 :
+     document.write("Today is Thursday");
+     break;
+     case 4 :
+     document.write("Today is Friday");
+     break;
+     case 5 :
+     document.write("Today is Saturday");
+     break;
+     case 6 :
+     document.write("Today is Sunday");
+     break;
+     default :
+        document.write("Enter the valid Weekday")
+ }
+</script><br><br>
+
+<!-- ALERT BOX  -->
+
+<!-- <script>
+ document.write("<h2>ALERT BOX </h2>")
+ var A = 10;
+ var B = 20;
+ if(A > B){
+   alert("A is Greater")
+ }else{
+   alert("B is Greater")
+ }
+</script><br><br> -->
+
+<!-- CONFIRM BOX   -->
+<!-- <script>
+ document.write("<h2>CONFIRM BOX </h2>")  
+ var A = confirm("Do you like our website?")
+ if (A){
+   alert("Thank");
+ }else{
+   alert("Sorry");
+ }
+</script><br><br> -->
+
+<!-- PROMPT BOX  -->
+<!-- <script>
+ document.write("<h2>PROMPT BOX </h2>")  
+ var A = prompt("What is your Name ?");
+ alert(A);
+ document.write(A);
+</script><br><br> -->
+
+<!-- FUNCTIONS SYNTAX  -->
+
+<script>
+  document.write("<h2>FUNCTIONS SYNTAX </h2>")  
+  function hello(){
+   document.write("Hello Everybody");
+  }
+  hello();
+</script><br><br>
+
+<!-- FUNCTIONS WITH PARAMETERS  -->
+
+<script>
+ document.write("<h2>FUNCTIONS WITH PARAMETERS </h2>")  
+ function hello (fname,lname){
+   document.write("Hello"+ fname+" "+ lname);
+ }
+ hello ("Lalit","Baba");
+</script>
+
+<!-- FUNCTIONS WITH RETURN VALUE  -->
+
+<script>
+ document.write("<h2>FUNCTIONS WITH RETURN VALUE </h2>")  
+ function fullname(fname= "Lalit" , lname = "Baba"){
+   var A = fname +" "+ lname;
+   return A;
+ } 
+ var fn = fullname ("Ram","Kumar");
+ document.write(fn);
+</script><br><br>
+<script>
+ function sum(math,eng,sc){
+   var s = math+eng+sc
+   return s;
+ } 
+ var total = sum (55,65,75);
+ document.write(total);
+</script>
+
+<!-- GLOBAL & LOCAL VARIABLES  -->
+
+<script>
+ document.write("<h2>GLOBAL & LOCAL VARIABLES </h2>")  
+ var A = "Lalit Baba";
+ function hello(){
+   document.write(A+"<br>");
+ }
+ hello();
+ document.write(A)
+</script>
+
+<!-- BASIC EVENTS  -->
+
+<script>
+ document.write("<h2> BASIC EVENTS</h2>")
+ function hello(){
+   alert("Hello Everyone");
+ }
+</script>
+
+
+<button onclick="hello()">Click Me</button>
+<p oncontextmenu="hello()">Click on Me</p>
+
+
+    
+<!-- JS WHILE LOOP -->
+     <script>
+        document.write ( "<h2> exercises-1 WHILE LOOP</h2>")
+        var A = 1;
+        while (A <= 10){
+        document.write (A + " Lalit baba<br>");
+        A = A + 1;
+        }
+     </script><br>
+
+     <!-- DO/WHILE LOOP -->
+     <script>
+      document.write ( "<h2>DO/WHILE LOOP</h2>")
+      var A = 1;
+     do{
+      document.write (A + "  hello Lalit baba<br>");
+      A++;
+    } while (A <= 10)
+   </script><br>
+
+   <!-- Forloop -->
+   <script>
+      document.write ( " <h2>Forloop</h2>")
+      
+      for(var A = 1; A <= 10; A++) {
+      document.write (A + "  hello lalit baba<br>");
+      }
+   </script><br>
+
+   <!-- Break &continue statement -->
+   <script>
+      document.write ( " <h2>(Break &continue statement)</h2> <h2>continue statement</h2>")
+      for(var A = 1; A <= 10; A++) {
+         if(A == 3){
+      document.write ("hey :" + A + " <br>");
+      continue;
+      }
+      document.write ("number :" + A + " <br>");
+   }
+   document.write ( " <h2>Break statement</h2>")
+   for(var A = 1; A <= 10; A++) {
+         if(A == 3){
+      document.write ("hey :" + A + " <br>");
+      break;
+      }
+      document.write ("number :" + A + " <br>");
+   }
+   </script><br>
+
+   <!-- EVEN/ODD NUMBER WITH LOOP -->
+   <script>
+   document.write ( " <h2>EVEN NUMBER WITH LOOP</h2>")
+   for(var A = 1; A <= 30; A++) {
+      if (A%2==0){
+         document.write (A + "<br>"); 
+      }
+   }
+    </script><br>
+     
+    <script>
+   document.write ( " <h2>odd NUMBER WITH LOOP</h2>")
+  
+   for(var A = 1; A <= 30; A++) {
+      if (A%2!==0){
+         document.write (A + "<br>"); 
+      }
+   }
+   </script><br>
+    
+    <!-- NESTED LOOP -->
+    <SCRipt>
+      document.write ( " <h2>NESTED LOOP</h2>")
+  
+       for(var A = 1; A <= 100; A=A+10) {
+       for(var b=A; b < A+10; b++) {
+         document.write (b + " "); 
+      }
+      document.write ("<br>");  
+   }
+    </SCRipt><br>
+
+          <!-- ARRAY-1 -->
+    <script>
+      document.write ( " <h2>ARRAY</h2>")
+     var ary =[10,20,30,40,50,];
+     document.write (ary[2]); 
+
+      </script><br>
+
+    <script>
+       document.write ( " <h2>ARRAY</h2>")
+     var ary =[10,20,30,40,50,];
+     for(var A=0; A<=4; A++){
+       document.write (ary[A] + "<br>"); 
+        }
+      </script><br>
+
+   <!-- ARRAY-2 -->
+   <script>
+    document.write ( " <h2>ANOTHER WAY TO CREATE ARRAY</h2>")
+    var ary = new Array();
+    ary[1] = "harry";
+    ary[3] = true;
+       document.write ("<ul>"); 
+    for( var A = 0; A <5; A++){
+     document.write ( "<li>" + ary[A] + "</li> " ); 
+  }
+    document.write ("</ul>"); 
+  </script><br>
+
+  <!-- MULTIDIMENSIONAL ARRAY -->
+   <SCRipt>
+      document.write ( " <h2>MULTIDIMENSIONAL ARRAY</h2>")
+      var ary =[
+         ["harry",18,"male","B.com"],
+         ["sunny",19,"male","BCA"],
+         ["sarah",18,"female","BCA"],
+         ["tom",18,"male","B.com"]
+      ];
+      document.write("<table border='1px' cellspacing='0'>");  
+      for( var A = 0; A <4; A++){
+         document.write ( "<tr> ");  
+      for( var b = 0; b <4; b++){
+         document.write ("<td>"+ ary[A][b] + "</td> ");  
+      }
+      document.write("<tr>");  
+   } 
+   document.write( "</table> ");
+   </SCRipt><br>
+
+  <!-- MODIFY & REMOVE ARRAY ELEMENT    -->
+<script>
+    document.write ( " <h2>MODIFY  ARRAY ELEMENT</h2>")
+         var A =  ["sarah",18,"female","BCA"];
+    document.write(A + "<br>"); 
+    A[0] + "Lalit";
+    document.write(A + "<br>"); 
+    A[1] + "20"
+    document.write(A + "<br>"); 
+
+    document.write ( " <h2>REMOVE ARRAY ELEMENT</h2>")
+
+    var A =  ["sarah",18,"female","BCA"];
+    document.write(A + "<br>"); 
+    delete A[1];
+    document.write(A + "<br>"); 
+    delete A[2];
+    document.write(A + "<br>"); 
+</script><br>
+
+<!-- ARRAY METHODS SORT -->
+<script>
+   document.write ( " <h2>ARRAY METHODS SORT()</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.sort();
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS REVERSE -->
+<script>
+   document.write ( " <h2>ARRAY METHODS REVERSE()</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.reverse();
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS POP() -->
+<script>
+   document.write ( " <h2>ARRAY METHODS POP.()</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.pop();
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS PUSH -->
+<script>
+   document.write ( " <h2>ARRAY METHODS PUSH.()</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.push("rahul");
+   document.write(A + "<br>"); 
+   A.push("salman");
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS SHIFT -->
+<script>
+   document.write ( " <h2>ARRAY METHODS SHIFT.</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.shift();
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS UNSHIFT -->
+<script>
+   document.write ( " <h2>ARRAY METHODS UNSHIFT.</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br>"); 
+   A.unshift("rahul");
+   document.write(A + "<br>"); 
+
+</script><br>
+
+<!-- ARRAY METHODS CONCAT -->
+<script>
+   document.write ( " <h2>ARRAY METHODS CONCAT.</h2>")
+   var A = [ "sanjay","aman","rehman","karan"];
+       b= [" rahul","karan"];
+       c = ["neha","mahima"];
+  var d = A.concat(b,c);
+   document.write(d); 
+
+</script><br>
+
+<!-- ARRAY METHODS JOIN -->
+<script>
+   document.write ( " <h2>ARRAY METHODS JOIN.</h2>")
+
+   var A= [ "sanjay","aman","rehman"];
+   var b= [" rahul","karan"];
+   var C = A.concat(b);
+  document.write(C + "<br><br>"); 
+  var d = A.join("<br>");
+
+   document.write(d); 
+
+</script><br>
+
+<!-- ARRAY METHODS SLICE -->
+<script>
+    document.write ( " <h2>ARRAY METHODS SLICE.</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br><br>");
+   var b = A.slice(1,4);
+   document.write(b + "<br><br>");
+   var b = A.slice(1,3);
+   document.write(b + "<br><br>");
+   var b = A.slice(0,4);
+   document.write(b + "<br><br>");
+   </script><br>
+
+<!-- ARRAY METHODS SPLICE -->
+   <script>
+       document.write ( " <h2>ARRAY METHODS SPLICE.</h2>")
+   var A= [ "sanjay","aman","rehman","karan"];
+   document.write(A + "<br><br>");
+    A.splice(2,0,"neha","mahima");
+   document.write(A + "<br><br>");
+   A.splice(2,1,"neha","mahima");
+   document.write(A + "<br><br>");
+   A.splice(2,2,"neha","mahima");
+   document.write(A + "<br><br>");
+
+   </script><br>
+
+    <!-- ARRAY METHODS ISARRAY -->
+    <script>
+      document.write ( "<h2>ARRAY METHODS ISARRAY.</h2>")
+  var A = [ "sanjay","aman","rehman","karan"];
+  document.write(A + "<br><br>");
+
+  var b = Array.isArray(A);
+  document.write(b + "<br><br>");
+
+  var A = 10;
+  var b = Array.isArray(A);
+  document.write(b + "<br><br>");
+
+  var A = "rahul";
+  var b = Array.isArray(A);
+  document.write(b + "<br><br>");
+  </script><br>
+
+<!-- ARRAY METHODS INDEXOF -->
+<script>
+   document.write ( "<h2>ARRAY METHODS INDEXOF.</h2>")
+var A = [ "sanjay","aman","rehman","aman"];
+document.write(A + "<br><br>");
+var b = A.indexOf("aman");
+  document.write(b +  "<br><br>");
+  var b = A.indexOf("karan");
+  document.write(b + "<br><br>");
+  </script>
+
+<!-- ARRAY METHODS LASTINDEX OF  -->
+<script>
+   document.write ( "<h2>ARRAY METHODS LASTINDEX OF.</h2>")
+var A = [ "sanjay","aman","rehman","aman","rahul"];
+document.write(A + "<br><br>");
+var b = A.indexOf("aman",2);
+  document.write(b +  "<br><br>");
+  var b = A.indexOf("karan",4);
+  document.write(b + "<br><br>");
+  </script><br>
+
+<!-- ARRAY METHODS INCLUDES -->
+<script>
+   document.write ( "<h2>ARRAY METHOD INCLUDES.</h2>")
+var A = [ "sanjay","aman","rehman","aman","rahul"];
+document.write(A + "<br><br>");
+var b = A.includes("aman");
+  document.write(b +  "<br><br>");
+  var b = A.includes("neha");
+  document.write(b + "<br><br>");
+  var b = A.includes("baba");
+  document.write(b + "<br><br>");
+  var b = A.includes("rahul");
+  document.write(b + "<br><br>");
+</script><br>
+
+<!-- ARRAY METHODS SOME -->
+<script>
+   document.write ( "<h2>ARRAY METHOD SOME.</h2>")
+var ages = [10,13,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.some(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+</script><br>
+
+<!-- ARRAY METHODS EVERY -->
+<script>
+   document.write ( "<h2>ARRAY METHOD EVERY.</h2>")
+var ages = [10,13,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.every(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+
+var ages = [100,19,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.every(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+</script><br>
+
+<!-- ARRAY METHODS find -->
+<script>
+   document.write ( "<h2>ARRAY METHOD FIND.</h2>")
+var ages = [10,13,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.find(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+document.write ( "<h2>ARRAY METHOD FIND.</h2>")
+var ages = [10,35,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.find(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+</script><br>
+<!-- ARRAY METHODS FINDINDEX -->
+<script>
+   document.write ( "<h2>ARRAY METHOD FINDINDEX.</h2>")
+var ages = [10,13,18,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.findIndex(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+</script><br>
+
+<!-- ARRAY METHODS FILTER -->
+<script>
+   document.write ( "<h2>ARRAY METHOD FILTER.</h2>")
+var ages = [10,13,19,20];
+document.write(ages +  "<br><br>");
+
+var b = ages.filter(checkAdult);
+document.write(b +  "<br><br>");
+
+function checkAdult(age){
+   return age >= 18;
+}
+</script><br>
+
+<!-- ARRAY METHODS TOSTRING -->
+<script>
+document.write ( "<h2>ARRAY METHOD  TOSTRING.</h2>")
+var A = [ "sanjay","aman","rehman","aman","rahul"];
+A.toString();
+document.write(A + "<br><br>");
+</script><br>
+
+<!-- ARRAY METHODS VALUE OF -->
+<script>
+   document.write ( "<h2>ARRAY METHOD  VALUE OF.</h2>")
+   var A = [ "sanjay","aman","rehman","aman","rahul"];
+   A.valueOf();
+   document.write(A + "<br><br>");
+   </script><br>
+
+<!-- ARRAY METHODS FILL -->
+<script>
+   document.write ( "<h2>ARRAY METHOD  FILL.</h2>")
+   var A = [ "sanjay","aman","rehman","aman","rahul"];
+   document.write(A + "<br><br>");
+   
+   A.fill("ram");
+   document.write(A + "<br><br>");
+
+</script><br>
+
+<!-- ARRAY METHODS FOREACH -->
+<script>
+   document.write ( "<h2>ARRAY METHOD  FOREACH.</h2>")
+   var A = [ "sanjay","aman","rehman","aman","rahul"];
+A.forEach (function(value,index){
+   document.write(index +" : " + value + "<ba><br>");
+});
+
+</script><br>
+
+<!-- ARRAY METHODS OBJECTS -->
+<script>
+   document.write ( "<h2>ARRAY METHOD  OBJECTS.</h2>")
+    var A = {
+      fname : 'Lalit',
+      lname : 'Baba',
+      age : 23,
+      email : 'lalitbaba@gmail.com',
+      favmovies : ['dhoom','sholay','hum']
+       }
+    document.write(A.email + " <br>");
+    document.write(A.fname + " <br>");
+    document.write(A.lname + " <br>");
+    document.write(A.age + " <br>");
+    document.write(A.favmovies + " <br>");
+
+   </script><br>
+    <!-- OBJECTS PART-2 -->
+    <script>
+       document.write ( "<h2>OBJECTS PART-2.</h2>")
+    var person = new Object();
+    person.firstName = 'Salman';
+    person.lastName = 'khan';
+    person.age = 23;
+    person.email = 'salmankhan@gmail.com';
+   
+       document.write(person.lastName + " <br>")
+       document.write(person.firstName  + " <br>")
+       document.write(person.age  + " <br>")
+       document.write(person.email  + " <br>")
+</script><br>
+
+<!-- ARRAY OF OBJECT -->
+<script>
+   document.write ( "<h2> ARRAY OF OBJECTS.</h2>")
+   var student =[
+      {name : "ram",age : 15},
+      {name : "karan",age : 13},
+      {name : "rahul",age : 14},
+   ]; 
+   for(var A=0; A < student.length; A++){
+   document.write(student[a].name+" "+ student[a].age + " <br>");
+   }
+</script><br>
+
+<!-- CONST VARIABLE WITH ARRAY & OBJECTS -->
+<script>
+   document.write ( "<h2>CONST VARIABLE WITH ARRAY & OBJECTS.</h2>")
+   const x = {
+      name : "ram",
+      age : 25
+      
+   };
+ 
+   x.name = "yahoo baba";
+   x.age = 55;
+   document.write(x.name  + "<br><br>");
+   document.write(x.age + "<br>");
+</script><br>
+
+<!-- FOR/INLOOP -->
+<script>
+    document.write ( "<h2>FOR/INLOOP.</h2>")
+    var obj = {
+      fname : "Lalit",
+      lname : "Baba",
+      age : 23,
+      email : "lalitbaba@gmail.com",
+       };
+       for(var key in obj){
+         document.write(key + " : " + obj[key]+ "<br><br>");
+         }
+         </script><br>
+
+         <!-- ARRAY METHODS MAP() -->
+   <script>
+   // document.write ( "<h2>ARRAY METHODS MAP.</h2>")
+   // var ary = [11,4,9,16];
+   // var b = ary.map(test);
+   // document.write(b);
+   // function test(x){
+   //    return x*10;
+   // }
+   var ary = [
+      {fname : "yahoo", lname : "baba"},
+      {fname : "rahul", lname : "kumar"},
+      {fname : "karan", lname : "sharma"},
+    ];
+   var b = ary.map(test);
+   document.write(b);
+   function test(x){
+      return x.fname + " " + x.lname;
+   }
+  </script><br>
+
+<!-- STRING METHODS LENGTH PROPERTY -->
+<script>
+   document.write ( "<h2>STRING METHODS LENGTH PROPERTY.</h2>")
+   var str = "javascript is a great language";
+   var A = str.length;
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.toLowerCase();
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.includes("great");
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.startsWith("javascript");
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.endsWith("language");
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.search("great");
+   document.write(A +" <br>");
+   var str = "javascript is a great language";
+   var A = str.match("/is/g");
+   document.write(A +" <br>");
+   var str = "javascript is a great is language";
+   var A = str.indexOf("is");
+   document.write(A +" <br>");
+   var str = "javascript is a great is language";
+   var A = str.lastIndexOf("is");
+   document.write(A +" <br>");
+   var str = "javascript is a great is language";
+   var A = str.replace("is","are");
+   document.write(A +" <br>");
+   var str = "javascript is a Great is Language";
+   var A = str.trim();
+   document.write(A +" <br>");
+   var str = "javascript is a Great is Language";
+   var A = str.charAt(0);
+   document.write(A +" <br>");
+   var str = "javascript is a Great is Language";
+   var A = str.charCodeAt(1);
+   document.write(A +" <br>");
+  
+   var A = String.fromCharCode(110);
+   document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var str2 = "Hello";
+    var str3 = "world"
+    var A = str.concat(str2,str3);
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.split("");
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.repeat("2");
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.slice("2");
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.substr(2,5);
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.substring(2,9);
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.toString(2,9);
+    document.write(A +" <br>");
+    var str = "javascript is a Great is Language";
+    var A = str.valueOf();
+    document.write(A +" <br>");
+   </script><br> 
+   
+   <!-- JAVASCRIPT NUMBER METHODS -->
+   <script>
+      var A = "99";
+      var num  = Number(A);
+      document.write(num +" <br>");
+      var A = "99 66 77 ";
+      var num  = parseInt(A);
+      document.write(num +" <br>");
+      var A = "10.66";
+      var num  = parseFloat(A);
+      document.write(num +" <br>");
+      var A = "109";
+      var num  = isFinite(A);
+      document.write(num +" <br>");
+      var A = "109";
+      var num  = Number.isInteger(A);
+      document.write(num +" <br>");
+      var A = false;
+      var num  = Number.isFinite(A);
+      document.write(num +" <br>");
+      var A = 5.6667;
+      var num  = A.toFixed(A);
+      document.write(num +" <br>");
+      var A = 5.6667;
+      var num  = A.toPrecision(3);
+      document.write(num +" <br>");
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
